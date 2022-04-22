@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #019b4baf;
+    ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(https://i.imgur.com/6YVWb3y.jpeg);
+    background-color: var(--primary-color);
+    font: bold 2rem 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+.cadastro {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.cadastroExames {
+    display: flex;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    box-shadow: 1px 1px 5px var(--secondary-color);
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.cadastro_List {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cadastroItem {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 1px 1px 5px var(--secondary-color);
+}
+
+.cadastroItem>div {
+    width: 80%;
+}
+
+.cadastroItem:hover {
+    cursor: pointer;
+    transition: all .5s ease;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.cadastroItem>input[type='text'] {
+    border: none;
+    width: 80%;
+    font: inherit;
+}
+
+.cadastroItem>input[type='button'],
+.cadastroItem>input[type='checkbox'] {
+    width: 30px;
+    height: 30px;
+    font: inherit;
+}
+
+.cadastroItem>input[type='checkbox']:checked+div {
+    text-decoration: line-through;
+}
+
+.cadastro_new-item {
+    display: flex;
+    background-color: #019b4baf;
+    width: 100%;
+    height: 70px;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    box-shadow: 1px 1px 5px var(--secondary-color);
+    margin: 10px;
+    font: inherit;
+}
+
+.cadastro_newItem>input {
+    background-color: #019b4baf;
+    border: none;
+    width: 80%;
+    outline: none;
+    font: inherit;
+}
+
+.cadastro_newItem>input::placeholder {
+    font-style: italic;
+    font-weight: normal;
+}
